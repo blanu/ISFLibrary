@@ -22,7 +22,7 @@
 
 import Foundation
 
-public protocol VersionRepresentable: RawRepresentable, Comparable, Equatable, CustomStringConvertible { }
+public protocol VersionRepresentable: RawRepresentable, Comparable, CustomStringConvertible { }
 
 extension VersionRepresentable {
     internal func getVersion(from string: String) -> Array<UInt>? {
